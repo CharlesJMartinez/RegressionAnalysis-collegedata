@@ -1,2 +1,4 @@
 # RegressionAnalysis-collegedata
 Regression Analysis: linear model median related to major category
+
+When building the model median ~ major_category I noticed that the p-values were too small except the one for business that seemed to be significant, however when looking at the residuals vs fitted plot, it suggested that there could be an outlier on data point 63, which was the max median for the major category Business. I eliminated the potential outlier and ran the lineal model again, when looking at the summary all the p-values were higher that 0.05 which suggested there is not a significant relationship between the major category and the median salary. The r-square is 0.084 which means the model only explains 8% of the variance which is a signal of a bad model, the F-statistic is very close to 1 which also strongly suggest we can't reject the NULL hypothesis that there is no relationship between median salary and major category
